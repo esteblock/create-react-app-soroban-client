@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import SorobanClient from 'soroban-client'
+
+const myServer = new SorobanClient.Server("https://soroban-rpc.stellar.org")
+console.log("myServer: ", myServer)
 
 function App() {
   return (
